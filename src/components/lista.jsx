@@ -1,23 +1,51 @@
 import React  from "react"
 import { connect } from "react-redux"
 
+import './lista.css'
 
 const Productos = ({productos, removerProducto}) => {
 
+
+        return(
+            <section className="sectionlista">
+                <div className="contenttop">
+                <h2>Esto es lo que quiero!</h2>
+                <p>Buscá el producto que más deseas y arma tu lista de los productos que mas queres.</p>
+                </div>
+                <div className="contentArticle">
+                {
+                productos.map(p => (
+                    <article key={p.id}>
+                        <h5 title={p.title}>{p.title}</h5>
+                        <span>${p.price}</span>
+                        <img title={p.title} alt={p.title} src={p.thumbnail} />
+                        <button onClick={()=> removerProducto(p)}>Borrar</button>
+                    </article>
+                ))
+                }
+                </div>
+            </section>
+            )
+   
+
     return(
-        <section>
+        <section className="sectionlista">
+            <div className="contenttop">
             <h2>Esto es lo que quiero!</h2>
             <p>Arma tu lista de los productos que mas queres y compartila.</p>
+            </div>
+            <div className="contentArticle">
             {
             productos.map(p => (
                 <article key={p.id}>
-                    <h5>{p.title}</h5>
-                    <img alt={p.title} src={p.thumbnail} />
-                    <p>${p.price}</p>
+                    <h5 title={p.title}>{p.title}</h5>
+                    <span>${p.price}</span>
+                    <img title={p.title} alt={p.title} src={p.thumbnail} />
                     <button onClick={()=> removerProducto(p)}>Borrar</button>
                 </article>
             ))
             }
+            </div>
         </section>
         )
 }

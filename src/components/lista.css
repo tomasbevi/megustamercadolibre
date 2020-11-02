@@ -1,0 +1,45 @@
+.sectionlista{
+    padding:40px;
+    background-color:red;
+    color:#fff
+}
+.contenttop{
+    margin-bottom:10px;
+}
+
+.contentArticle{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.contentArticle article{
+    color:#000;
+    background-color:#fff;
+    border-radius: 8px;
+    flex-grow: 4;
+    margin: 5px;
+    padding:15px
+}
+.contentArticle article img{
+    width:120px;
+    height:120px;
+}
+.contentArticle article h5{
+    width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   
+}
+
+.sectionlista h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+}
+
+.sectionlista p , h5, span{
+    font-family: 'Itim', cursive;
+}
+.sectionlista h5{
+    font-size: 20px;
+}

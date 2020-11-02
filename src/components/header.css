@@ -1,0 +1,14 @@
+.header{
+    padding: 20px;
+    background-color: #fff159;
+    font-size:13px;
+    font-family: 'Itim', cursive;
+}
+
+.header span{
+    color:#333;
+    font-size:30px;
+    font-family: 'Indie Flower', cursive;
+    margin-right: 10px;
+    font-weight: bold;
+}

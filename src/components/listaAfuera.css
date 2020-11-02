@@ -1,0 +1,23 @@
+.sectionlistaAfuera{
+    background-color: #fff159;
+    padding:30px;
+}
+.divinput{
+    width: 100%;
+
+}
+.sectionlistaAfuera h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    color:#333;
+}
+.divinput input{
+    font-family: 'Itim', cursive;
+    width: 100%;
+    border-radius: 5px ;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    padding-left: 10px;
+}
