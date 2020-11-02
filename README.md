@@ -5,8 +5,8 @@ React JS / Redux
 
 Version online : https://www.tomasbevi.com.ar/megustamercadolibre/
 
-![Image of App ML me gusta](https://www.tomasbevi.com.ar/files/captura2.jpg)
-![Image of App ML me gusta](https://www.tomasbevi.com.ar/files/captura1.jpg)
+![Image of App ML me gusta](https://www.tomasbevi.com.ar/files/captura1-v2.jpg)
+![Image of App ML me gusta](https://www.tomasbevi.com.ar/files/captura2-v2.jpg)
 
 ### Installation
 
