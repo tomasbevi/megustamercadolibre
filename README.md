@@ -1,5 +1,5 @@
 # Lista de deseos de Mercado Libre
-Simple app con busqueda de productos de la API de mercadolibre y posibilidad de agregarla a tu lista de deseo, ideal para lista de regalos de cumpleaños , casamientos.
+Simple challenge realizado en 3 hs de APP con busqueda de productos de la API de mercadolibre y posibilidad de agregarla a tu lista de deseo, ideal para lista de regalos de cumpleaños , casamientos.
 
 React JS / Redux 
 
