@@ -27,17 +27,17 @@ const obtenerdatos = async () => {
         <section className="sectionlistaAfuera">
             <h2>Busca en Mercado Libre!</h2>
             <div className="divinput">
-                <input ref={ref} onKeyUp={() => setBusqueda(ref.current.value)}></input>
+                <input placeholder="ej: bicicletas, pc gammer, remeras, etc.." ref={ref} onKeyUp={() => setBusqueda(ref.current.value)}></input>
             </div>
             <div className="contentArticle">
             {
             productosML.map(p => (
                 <article key={p.id}>
-                    <h5>{p.title}</h5>
-                    <img alt={p.title} src={p.thumbnail} />
-                    <p>${p.price}</p>
-                    <button onClick={()=> agregarProducto(p)}>Agregar</button>
-                    <a target="_blank" href={p.permalink}>Ver + </a>
+                    <img alt={p.title} title={p.title} src={p.thumbnail} />
+                    <h5 title={p.title} alt={p.title}>{p.title}</h5>
+                    <span>${p.price}</span>
+                    <a className="boton" title="Agregar a la lista" onClick={()=> agregarProducto(p)}>Agregar</a>
+                    <a className="boton" title="Ver detalles del producto en ML" target="_blank" href={p.permalink}>Ver + </a>
                 </article>
             ))
             }

@@ -16,38 +16,17 @@ const Productos = ({productos, removerProducto}) => {
                 {
                 productos.map(p => (
                     <article key={p.id}>
+                        <img title={p.title} alt={p.title} src={p.thumbnail} />
                         <h5 title={p.title}>{p.title}</h5>
                         <span>${p.price}</span>
-                        <img title={p.title} alt={p.title} src={p.thumbnail} />
-                        <button onClick={()=> removerProducto(p)}>Borrar</button>
+                        <a className="boton" onClick={()=> removerProducto(p)}>Borrar</a>
                     </article>
                 ))
                 }
                 </div>
             </section>
             )
-   
 
-    return(
-        <section className="sectionlista">
-            <div className="contenttop">
-            <h2>Esto es lo que quiero!</h2>
-            <p>Arma tu lista de los productos que mas queres y compartila.</p>
-            </div>
-            <div className="contentArticle">
-            {
-            productos.map(p => (
-                <article key={p.id}>
-                    <h5 title={p.title}>{p.title}</h5>
-                    <span>${p.price}</span>
-                    <img title={p.title} alt={p.title} src={p.thumbnail} />
-                    <button onClick={()=> removerProducto(p)}>Borrar</button>
-                </article>
-            ))
-            }
-            </div>
-        </section>
-        )
 }
 
 const mapStateToProps = (state => ({
