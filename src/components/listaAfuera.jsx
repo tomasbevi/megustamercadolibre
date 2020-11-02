@@ -27,7 +27,7 @@ const obtenerdatos = async () => {
         <section className="sectionlistaAfuera">
             <h2>Busca en Mercado Libre!</h2>
             <div className="divinput">
-                <input placeholder="ej: bicicletas, pc gammer, remeras, etc.." ref={ref} onKeyUp={() => setBusqueda(ref.current.value)}></input>
+                <input placeholder="ej: bicicletas, pc gamer, remeras, etc.." ref={ref} onKeyUp={() => setBusqueda(ref.current.value)}></input>
             </div>
             <div className="contentArticle">
             {
